@@ -1,6 +1,6 @@
 #--------------------------------------------------------------------------#
 #install caffe
-#安装依赖项
+#install dependency
 sudo apt-get update 
 sudo apt-get install -y build-essential cmake git pkg-config 
  sudo apt-get install -y libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler 
@@ -15,8 +15,8 @@ sudo apt-get install -y --no-install-recommends libboost-all-dev
 unzip caffe
 cd caffe
 #git clone https://github.com/BVLC/caffe.git  #从github上git caffe
-#cd caffe #打开到刚刚git下来的caffe 
-sudo cp Makefile.config.example Makefile.config   #将Makefile.config.example的内容复制到Makefile.config 
+#cd caffe #opencv caffe which download from github 
+sudo cp Makefile.config.example Makefile.config   #将Makefile.config.example的内容复制到Makefile.config # copy Makefile.config.example to Makefile.config
 #因为make指令只能make Makefile.config文件，而Makefile.config.example是caffe给出的makefile例子 
 sudo gedit Makefile.config #打开Makefile.config文件
 #打开之后修改如下内容：
