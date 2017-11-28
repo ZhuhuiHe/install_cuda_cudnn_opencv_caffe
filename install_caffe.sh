@@ -12,6 +12,7 @@ sudo apt-get install -y --no-install-recommends libboost-all-dev
  sudo apt-get install -y python-numpy python-scipy
 
 # path of caffe
+unzip caffe
 cd caffe
 #git clone https://github.com/BVLC/caffe.git  #从github上git caffe
 #cd caffe #打开到刚刚git下来的caffe 
