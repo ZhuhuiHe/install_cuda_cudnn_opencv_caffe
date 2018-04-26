@@ -34,3 +34,9 @@ mkdir build
 cd build  
 cmake .. 
 make -j10 
+#fatal error: caffe/proto/caffe.pb.h: No such file or directory  #include "caffe/proto/caffe.pb.h"
+#解决方法:
+# In the directory you installed Caffe to
+protoc src/caffe/proto/caffe.proto --cpp_out=.
+mkdir include/caffe/proto
+mv src/caffe/proto/caffe.pb.h include/caffe/proto
